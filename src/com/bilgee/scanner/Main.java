@@ -13,5 +13,16 @@ public class Main {
         String playerName = scan.nextLine();
         System.out.println("Player #1:" + playerName);
 
+        int x = scan.nextInt();
+
+        for (int i = 0; i < x; i++){
+            System.out.println(i);
+        }
+
+
+
+
+
+
     }
 }
