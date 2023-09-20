@@ -19,6 +19,13 @@ public class Main {
             System.out.println(i);
         }
 
+        do{
+
+            System.out.println("Input number:");
+            scan.nextInt();
+
+        }while(true);
+
 
 
 
