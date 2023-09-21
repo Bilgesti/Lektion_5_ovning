@@ -11,20 +11,32 @@ public class Main {
         System.out.println("Please Enter your name:");
 
         String playerName = scan.nextLine();
+
         System.out.println("Player #1:" + playerName);
+
 
         int x = scan.nextInt();
 
+        boolean isPlaying = true;
+
         for (int i = 0; i < x; i++){
             System.out.println(i);
+
         }
 
         do{
+            // Om användaren matar in “stop” så avslutas
+            //do while loopen!
+            System.out.println("Type " + ("STOP!") + " to exit. " );
+            String input = scan.next();
 
-            System.out.println("Input number:");
-            scan.nextInt();
+            if (input.equals("STOP!") ){
 
-        }while(true);
+            isPlaying = false;}
+
+        }while(isPlaying);
+
+        }
 
 
 
@@ -32,4 +44,4 @@ public class Main {
 
 
     }
-}
+
