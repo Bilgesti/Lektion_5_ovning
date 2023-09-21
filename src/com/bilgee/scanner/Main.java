@@ -24,15 +24,25 @@ public class Main {
 
         }
 
-        do{
-            // Om användaren matar in “stop” så avslutas
-            //do while loopen!
-            System.out.println("Type " + ("STOP!") + " to exit. " );
+        do {
+            System.out.println("Type " + ("stop") + " to exit.");
+            System.out.println("Type " + ("1") + " to throw.");
+
             String input = scan.next();
+            //Skapa en ‘switch’
+            switch (input.toLowerCase()) {
 
-            if (input.equals("STOP!") ){
+                case "stop":
+                    isPlaying = false;
+                    break;
 
-            isPlaying = false;}
+                case "1":
+                    System.out.println("Throwing!");
+                    break;
+
+                default:
+                    System.out.println("Wrong input");
+            }
 
         }while(isPlaying);
 
